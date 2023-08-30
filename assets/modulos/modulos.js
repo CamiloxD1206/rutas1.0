@@ -142,12 +142,14 @@ export const rutas = [
 export const divMostrar = document.querySelector('#mostrar');
 export let input=document.createElement('option');
 export const select1=document.querySelector('#select1');
-export const select6=document.querySelector('#select6');
+export const select4=document.querySelector('#select4');
 export const select3=document.querySelector('#select3');
 export const select2=document.querySelector('#select2');
+export const select5=document.querySelector('#select5');
+export const select6=document.querySelector('#select6');
 
 //--------------------------
- export const objetoPqsi=  {
+ export const datosBusqueda=  {
   id: "",
   nombre: "",
   minKilometros: "",

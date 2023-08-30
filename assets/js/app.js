@@ -1,4 +1,4 @@
-import {rutas,select1, select2, select3,divMostrar,objetoPqsi} from '../modulos/modulos.js';
+import {rutas,select1, select2, select3,select4,select5,select6,divMostrar,datosBusqueda} from '../modulos/modulos.js';
 
 for (let i = 0; i < rutas.length;i++) {
     const opcion=document.createElement('option');
@@ -20,7 +20,7 @@ for (let i = 0; i < rutas.length;i++) {
        
    }
 //------------------------------------------------------
-//esta esta bien------------------------------------
+//esto esta bien------------------------------------
    select1.addEventListener('change',(rutaSeleccionada)=>{
     divMostrar.innerHTML = '';
 rutas.forEach(element => {
@@ -37,3 +37,36 @@ rutas.forEach(element => {
 
 //---------------------------------------------------
 //filtros:
+select2.addEventListener('change',(z)=>{
+    console.log('escogiste esta opcion')
+    console.log(z.target.value);
+    datosBusqueda.minKilometros = z.target.value;
+    console.log(datosBusqueda);
+})
+select3.addEventListener('change',(z)=>{
+    console.log('escogiste esta opcion')
+    console.log(z.target.value);
+    datosBusqueda.maxKilometrosKilometros = z.target.value;
+    console.log(datosBusqueda);
+})
+select4.addEventListener('change',(z)=>{
+    console.log('escogiste esta opcion')
+    console.log(z.target.value);
+    datosBusqueda.estado = z.target.value;
+    console.log(datosBusqueda);
+})
+select5.addEventListener('change',(z)=>{
+    console.log('escogiste esta opcion')
+    console.log(z.target.value);
+    datosBusqueda.calificacion = z.target.value;
+    console.log(datosBusqueda);
+})
+select6.addEventListener('change',(z)=>{
+    console.log('escogiste esta opcion')
+    console.log(z.target.value);
+    datosBusqueda.tipoVia = z.target.value;
+    console.log(datosBusqueda);
+})
+
+
+
