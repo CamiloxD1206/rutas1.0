@@ -147,23 +147,6 @@ export const select3=document.querySelector('#select3');
 export const select2=document.querySelector('#select2');
 
 //--------------------------
-
-
-
-// select1.addEventListener('change',(rutaSeleccionada)=>{
-//     divMostrar.innerHTML = '';
-
-//     if (rutaSeleccionada) {
-//         const rutaHTML = document.createElement('h4');
-//         rutaHTML.textContent = `Nombre: ${rutaSeleccionada.target.value}`;
-//         divMostrar.appendChild(rutaHTML);
-//     } else {
-//         const mensaje = document.createElement('p');
-//         mensaje.textContent = "Ruta no encontrada.";
-//         divMostrar.appendChild(mensaje);
-//     }
-// });
-//----------------
  export const objetoPqsi=  {
   id: "",
   nombre: "",

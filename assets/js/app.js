@@ -26,7 +26,7 @@ for (let i = 0; i < rutas.length;i++) {
 rutas.forEach(element => {
     if(rutaSeleccionada.target.value===element.nombre){
     divMostrar.innerHTML=`<h4>Nombre: ${element.nombre}</h4>
-    <h4>minKM: ${element.minKilometros}</h4>s
+    <h4>minKM: ${element.minKilometros}</h4>
     <h4>maxKM: ${element.maxKilometros}</h4>
     <h4>estado: ${element.estado}</h4>
     <h4>calificacion: ${element.calificacion}</h4>`;
@@ -36,3 +36,4 @@ rutas.forEach(element => {
 });
 
 //---------------------------------------------------
+//filtros:
