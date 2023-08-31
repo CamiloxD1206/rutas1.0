@@ -139,7 +139,6 @@ export const rutas = [{
 ];
 //variables---------------
 export const divMostrar = document.querySelector('#mostrar');
-export let input = document.createElement('option');
 export const select1 = document.querySelector('#select1');
 export const select4 = document.querySelector('#select4');
 export const select3 = document.querySelector('#select3');
@@ -149,11 +148,13 @@ export const select6 = document.querySelector('#select6');
 
 //--------------------------
 export const datosBusqueda = {
-    id: "",
-    nombre: "",
-    minKilometros: "",
-    maxKilometros: "",
-    estado: "",
-    calificacion: "",
-    tipoVia: ""
-}
+        id: "",
+        nombre: "",
+        minKilometros: "",
+        maxKilometros: "",
+        estado: "",
+        calificacion: "",
+        tipoVia: ""
+    }
+    //-----------------------------
+export const botonr = document.querySelector('#reinicio');

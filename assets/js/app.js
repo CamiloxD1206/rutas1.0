@@ -1,4 +1,4 @@
-import { rutas, select1, select2, select3, select4, select5, select6, divMostrar, datosBusqueda } from '../modulos/modulos.js';
+import { rutas, select1, select2, select3, select4, select5, select6, divMostrar, datosBusqueda, botonr } from '../modulos/modulos.js';
 
 for (let i = 0; i < rutas.length; i++) {
     const opcion = document.createElement('option');
@@ -29,31 +29,26 @@ select1.addEventListener('change', (z) => {
 select2.addEventListener('change', (z) => {
     datosBusqueda.minKilometros = z.target.value;
     filtros();
-
 })
 select3.addEventListener('change', (z) => {
     datosBusqueda.maxKilometros = z.target.value;
     filtros();
-
 })
 select4.addEventListener('change', (z) => {
 
     datosBusqueda.estado = z.target.value;
     filtros();
-
 })
 select5.addEventListener('change', (z) => {
 
     datosBusqueda.calificacion = z.target.value;
     filtros();
-
 })
 select6.addEventListener('change', (z) => {
 
     datosBusqueda.tipoVia = z.target.value;
     filtros();
     console.log(datosBusqueda)
-
 })
 
 function filtros() {
@@ -70,6 +65,7 @@ function filtros() {
 
     divMostrar.innerHTML = '';
     const ul = document.createElement('ul');
+    ul.classList.add('ulrtas')
 
     rutasFiltradas.forEach(element => {
         const li = document.createElement('li');
@@ -87,3 +83,24 @@ function filtros() {
 
     divMostrar.appendChild(ul);
 }
+//----------------------------------
+
+botonr.addEventListener('click', () => {
+    // Restablecer los valores de búsqueda
+    datosBusqueda.nombre = '';
+    datosBusqueda.minKilometros = '';
+    datosBusqueda.maxKilometros = '';
+    datosBusqueda.estado = '';
+    datosBusqueda.calificacion = '';
+    datosBusqueda.tipoVia = '';
+
+    // Limpiar los valores seleccionados en los selectores
+    select1.value = '';
+    select2.value = '';
+    select3.value = '';
+    select4.value = '';
+    select5.value = '';
+    select6.value = '';
+
+    divMostrar.innerHTML = " ";
+})

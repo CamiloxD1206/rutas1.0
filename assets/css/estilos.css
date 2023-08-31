@@ -134,3 +134,11 @@ footer {
     margin: 1%;
     width: 900px;
 }
+
+.ulrtas {
+    background-color: rgba(93, 93, 93, 0.628);
+    border-radius: 10px;
+    padding-right: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
