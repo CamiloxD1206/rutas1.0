@@ -34,10 +34,9 @@
     height: auto;
 }
 
-.filtros2 { 
-    display: grid; 
-    grid-template-areas: "label4 label5 label6" 
-                         "input4  input5 input6";
+.filtros2 {
+    display: grid;
+    grid-template-areas: "label4 label5 label6" "input4  input5 input6";
 }
 
 .input {
@@ -107,7 +106,7 @@
 }
 
 main {
-    padding: 9%;
+    padding: 2%;
 }
 
 footer {
@@ -118,12 +117,20 @@ footer {
 }
 
 .mostrar {
-display: flex;
-justify-content: center;
-justify-content: space-around;
-}
-.titulodetalles{
-    margin:5%;
     display: flex;
     justify-content: center;
+    justify-content: space-around;
+}
+
+.titulodetalles {
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.listadoRutas {
+    display: flex;
+    justify-content: space-between;
+    margin: 1%;
+    width: 900px;
 }
